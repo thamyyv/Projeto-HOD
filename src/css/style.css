@@ -1,0 +1,103 @@
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.img_carrossel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.img {
+  width: 100vw;
+  display: none;
+}
+
+.img.active {
+  display: block;
+  animation: mudarImagem 0.7s;
+}
+
+@keyframes mudarImagem {
+    from {
+        opacity: 0.85;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main:after {
+    content: "123";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0,0,0,1)90%);
+    z-index: -1;
+}
+
+.infos {
+  display: none;
+}
+
+.infos.active {
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.infos h1 {
+  font-size: 35px;
+  color: white;
+  font-family: "GOT";
+  margin-bottom: 80px;
+  letter-spacing: 8px;
+}
+
+.infos p {
+  color: white;
+  font-size: 24px;
+  width: 49%;
+  line-height: 40px;
+  height: 300px;
+  overflow: auto;
+  padding-right: 15px;
+}
+
+.btn_carrossel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-color: white;
+}
+
+.btn.active {
+  background-color: gray;
+}
+
+
+
+@font-face {
+  font-family: "GOT";
+  src: url(../fontes/GOT.ttf);
+}
