@@ -14,6 +14,8 @@ body {
 
 .img {
   width: 100vw;
+  height: 100vh; /* Faz as imagens ocuparem 100% da altura da tela */
+  object-fit: cover; /* Faz a imagem cobrir toda a área do contêiner sem distorção */
   display: none;
 }
 
@@ -69,7 +71,7 @@ main:after {
 .infos p {
   color: white;
   font-size: 24px;
-  width: 49%;
+  width: 50%;
   line-height: 40px;
   height: 300px;
   overflow: auto;
@@ -94,7 +96,6 @@ main:after {
 .btn.active {
   background-color: gray;
 }
-
 
 
 @font-face {

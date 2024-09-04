@@ -1,0 +1,42 @@
+@media (max-width: 1280px) {
+  body {
+    padding: 0 40px;
+   
+  }
+}
+
+@media (max-width: 768px) {
+  .infos.active {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .infos.descricao {
+    text-align: center;
+  }
+
+  .infos p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    padding: 40px;
+  }
+
+  .infos.descricao {
+    text-align: center;
+  }
+
+  .infos p {
+    width: 90%;
+  }
+
+  .content {
+    gap: 50px;
+    min-height: 70vh;
+  }
+}
