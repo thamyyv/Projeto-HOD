@@ -25,23 +25,28 @@ body {
 }
 
 @keyframes mudarImagem {
-    from {
-        opacity: 0.85;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0.85;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 main:after {
-    content: "123";
-    min-height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0,0,0,1)90%);
-    z-index: -1;
+  content: "123";
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0.05926120448179273) 50%,
+    rgba(0, 0, 0, 1) 90%
+  );
+  z-index: -1;
 }
 
 .infos {
@@ -96,7 +101,6 @@ main:after {
 .btn.active {
   background-color: gray;
 }
-
 
 @font-face {
   font-family: "GOT";
